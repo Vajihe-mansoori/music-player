@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+    <script
+      src="https://kit.fontawesome.com/5b2261a7fd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="musicplayer">
+      <header class="songCover">
+        <img src="pic1.png" />
+      </header>
+      <main class="songInfo">
+        <h3 class="songName">Fake Love</h3>
+        <p class="songSinger">BTS</p>
+        <div class="progressContainer">
+          <div class="songProgress"></div>
+        </div>
+        <audio src="bts_fake_love.mp3" class="audio"></audio>
+      </main>
+      <footer class="songController">
+        <div class="ButtonsContainer">
+          <button class="prevSong controlButton fa fa-step-backward"></button>
+          <button class="playSong controlButton">
+            <i class="fas fa-play playSongIcon"></i>
+            <div class="playSong_colored">
+              <div class="playSong_wrapper"></div>
+            </div>
+          </button>
+          <button class="nextSong controlButton fa fa-step-forward"></button>
+        </div>
+        <div class="ButtonsContainer">
+          <button class="favSong controlButton fa fa-heart"></button>
+          <button class="listSong controlButton fa fa-bars"></button>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
